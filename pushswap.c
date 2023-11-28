@@ -6,7 +6,7 @@
 /*   By: mel-amar <mel-amar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:51:02 by mel-amar          #+#    #+#             */
-/*   Updated: 2023/11/28 19:45:51 by mel-amar         ###   ########.fr       */
+/*   Updated: 2023/11/28 19:54:16 by mel-amar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,11 @@ void	push_swap(t_stack *a, t_stack *b)
 		sort(a, b);
 }
 
-void f()
-{
-	system("leaks push_swap");
-}
-
 int	main(int ac, char **av)
 {
 	t_stack	*a;
 	t_stack	*b;
 
-	// atexit(f);
 	if (ac < 2 || !check_args(av, ac) || !check_overflow(av, ac))
 	{
 		write(2, "Error\n", 6);
